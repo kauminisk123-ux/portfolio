@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/portfolio">   {/* ← ADD THIS */}
+    <BrowserRouter basename="/portfolio">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
