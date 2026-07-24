@@ -1,0 +1,41 @@
+.ksk-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.ksk-logo:hover {
+  transform: scale(1.08) rotate(-6deg);
+}
+
+.ksk-logo:hover .ksk-ring {
+  animation: spinRing 3s linear infinite;
+}
+
+.ksk-ring {
+  stroke-dasharray: 283;
+  stroke-dashoffset: 50;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.ksk-logo:hover .ksk-ring {
+  stroke-dashoffset: 0;
+}
+
+.ksk-text {
+  letter-spacing: 2px;
+}
+
+@keyframes spinRing {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .ksk-logo svg {
+    width: 34px;
+    height: 34px;
+  }
+}
