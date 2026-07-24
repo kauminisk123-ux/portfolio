@@ -17,7 +17,7 @@ function About() {
           <div className="about-card profile-card">
             <div className="avatar-container">
               <video 
-                src="/avatar.mp4"
+                src="public/avatar.mp4"
                 className="avatar-video"
                 autoPlay
                 loop
